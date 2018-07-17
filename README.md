@@ -81,3 +81,5 @@ LightTraffic(cars)= {1  if 0<=cars < 161, 0 if cars>=161}
 MediumTraffic(cars) = {0 if 161<cars>=481, 1 if 161<=cars<481}
   
 HeavyTraffic(cars) = {0 if 481<cars, 1 if 481<=cars<=800}
+
+Santos, L. (2018). Markov Decision process · Artificial Inteligence. Leonardoaraujosantos.gitbooks.io. Retrieved 17 July 2018, from https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/markov_decision_process.html
