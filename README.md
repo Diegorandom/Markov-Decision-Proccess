@@ -1,6 +1,26 @@
 # Markov-Decision-Proccess
 
-BackPropagation Model to solve Traffic problem
+How to run
+
+How to run the project:
+
+python3 mdp.py
+
+1. A policy will be created in aprox. 30 sets.
+
+2. A window with the policy map will appear.
+
+3. When closing the window the crossing will start functioning with the policy
+
+4. The fuzzy indexes will be shown at the terminal
+
+5. A text file will be created and constantly updated with the map of the crossing.
+
+6. The crossing process doesn’t stop until closing the process at the terminal
+
+Regards! 
+
+Documentation of BackPropagation Model to solve Traffic problem
 
 Markov Decision process(MDP) is a framework used to help to make decisions on a stochastic environment. Our goal is to find a policy, which is a map that gives us all optimal actions on each state on our environment.
 MDP is somehow more powerful than simple planning, because your policy will allow you to do optimal actions even if something went wrong along the way. Simple planning just follow the plan after you find the best strategy.
