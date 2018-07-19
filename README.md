@@ -2,9 +2,8 @@
 
 How to run
 
-How to run the project:
-
-python3 mdp.py
+You gotta have python3 running in your computer.
+How to run the project in mac command line -> python3 mdp.py
 
 1. A policy will be created in aprox. 30 sets.
 
