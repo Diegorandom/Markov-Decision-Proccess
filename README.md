@@ -1,6 +1,6 @@
 # Markov-Decision-Proccess
 
-![Policy Map](images/policyMap.jpg)
+![Policy Map](images/policyMap.png)
 
 How to run
 
