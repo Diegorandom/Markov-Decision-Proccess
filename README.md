@@ -2,6 +2,21 @@
 
 ![Policy Map](images/policyMap.png)
 
+## What is this?
+This project emulates a crossing with cars advancing in a map using Markovian Decission Processes.
+
+## The map
+The map is a matrix. 
+The map is composed of numbers. Each number means something different:
+
+0 is a building block 🧱
+1 is a piece of street 🛣️
+3 is a car 🏎️
+4 is a temporary barrier 🚦 
+
+This is a map made out of these numbers:
+![numberMap](images/numberMap.png)
+
 How to run
 
 You gotta have: 
