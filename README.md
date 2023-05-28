@@ -70,16 +70,16 @@ The problem is that we don't live on a perfect deterministic world, so our actio
 - For instance when we choose the up action we have 80% probability of actually going up, and 10% of going left or right. 
 - Also if you choose to go left or right you have 80% chance of going left and 10% going up or down.
 
-### Here are the most important parts:
+### Here are the most important categories for the environment:
 
 #### States: 
 A set of possible states  S 
 
 #### Model:  T(s,a,s′)∴P(s′|s,a)  
-Probability to go to state  s′  when you do the action a while you were on state s, is also called transition model.
+Probability to go to state "s′" when you do action "a" while you were on state "s", is also called transition model.
 
 #### Action:  A(s) 
-Things that you can do on a particular state s .
+Things that you can do on a particular state s.
 
 #### Reward:  R(s) 
 Scalar value that you get for been on a state.
@@ -88,7 +88,7 @@ Scalar value that you get for been on a state.
 Is a map that tells the optimal action for every state.
 
 #### Optimal policy:  Π∗(s)→a 
-Is a policy that maximize your expected reward  R(s).
+Is a policy that maximizea your expected reward  R(s).
 
 In reinforcement learning we're going to learn a optimal policy by trial and error.
 
