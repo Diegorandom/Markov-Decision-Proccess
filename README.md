@@ -63,11 +63,12 @@ This is because you could encode on your current state everything you need from 
 
 ## Environment
 
-To simplify our universe imagine the grid world, here your agent objective is to arrive on the green block, and avoid the red block. Your available actions are:  ↑,↓,←,→
+To simplify our universe imagine the grid world, here your agent objective is to arrive on the green block, and avoid the red block. Your available actions are:  ↑,↓,←,→ and diagonals.
 
 The problem is that we don't live on a perfect deterministic world, so our actions could have have different outcomes:
 
-For instance when we choose the up action we have 80% probability of actually going up, and 10% of going left or right. Also if you choose to go left or right you have 80% chance of going left and 10% going up or down.
+- For instance when we choose the up action we have 80% probability of actually going up, and 10% of going left or right. 
+- Also if you choose to go left or right you have 80% chance of going left and 10% going up or down.
 
 ### Here are the most important parts:
 
@@ -115,26 +116,26 @@ Also you may find a term called memoization which is something that computer peo
 
 ## MemberShip Function 
 
-### x Axis corresponds to time (t), y Axis corresponds to degree of membership (𝜇)
+#### x Axis corresponds to time (t), y Axis corresponds to degree of membership (𝜇)
 
-### 𝜇lighttraffic: 𝑋 → [0,1]
+#### 𝜇lighttraffic: 𝑋 → [0,1]
 
-### 𝜇Mediumtraffic: 𝑋 → [0,1]
+#### 𝜇Mediumtraffic: 𝑋 → [0,1]
 
-### 𝜇Heavytraffic: 𝑋 → [0,1]
+#### 𝜇Heavytraffic: 𝑋 → [0,1]
 
-## This mapping is called degree of membership
+### This mapping is called degree of membership
 Quantifies the degree of membership of the element in X to a given fuzzy set. 
 In this case scenario X is the amount of cars over a given lane on a certain moment. As the value 𝜇n decreases or increases, 
 so does the degree of membership of X to a certain fuzzy set.
 
 ## Knowledge Base of Rules
 
-### LightTraffic(cars)= {1  if 0<=cars < 161, 0 if cars>=161}
+#### LightTraffic(cars)= {1  if 0<=cars < 161, 0 if cars>=161}
 
-### MediumTraffic(cars) = {0 if 161<cars>=481, 1 if 161<=cars<481}
+#### MediumTraffic(cars) = {0 if 161<cars>=481, 1 if 161<=cars<481}
   
-### HeavyTraffic(cars) = {0 if 481<cars, 1 if 481<=cars<=800}
+#### HeavyTraffic(cars) = {0 if 481<cars, 1 if 481<=cars<=800}
 
 ## References
 
