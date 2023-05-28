@@ -1,6 +1,9 @@
 # Markov-Decision-Proccess 
 ## Documentation of BackPropagation Model to solve Traffic problem
 
+## Context
+- Markov Decision process (MDP) is a framework used to help to make decisions on a stochastic environment.
+
 ![Policy Map](images/policyMap.png)
 
 ## What is this?
@@ -19,9 +22,8 @@ This is a map made out of these numbers:
 ![numberMap](images/numberMap.png)
 
 ## The Goal
-The goal is to manage the cars crossing the map to have the less traffic possible
-Markov Decision process(MDP) is a framework used to help to make decisions on a stochastic environment. 
-Our goal is to find a policy, which is a map that gives us all optimal actions on each state on our environment. 
+The goal is to manage the cars crossing the map to have the less traffic possible.
+This is to find a policy, which is a map that gives us all optimal actions on each state on our environment. 
 MDP is somehow more powerful than simple planning, because your policy will allow you to do optimal actions 
 even if something went wrong along the way. Simple planning just follow the plan after you find the best strategy.
 
@@ -46,17 +48,15 @@ How to run the project in mac command line: ```python3 mdp.py```
 
 6. The crossing process doesn’t stop until closing the process at the terminal
 
-
 ## What is a State
 
 Consider state as a summary (then called state-space) of all information needed to determine what happens next. There are 2 types of state space:
 
-### World-State: Normally huge, and not available to the agent.
+#### World-State: Normally huge, and not available to the agent.
 
-### Agent-State: Smaller, have all variables needed to make a decision related to the agent expected utility.
+#### Agent-State: Smaller, have all variables needed to make a decision related to the agent expected utility.
 
-
-##Markovian Property
+## Markovian Property
 
 Basically you don't need past states to do a optimal decision, all you need is the current state s. 
 This is because you could encode on your current state everything you need from the past to do a good decision. Still history matters...
@@ -71,17 +71,23 @@ For instance when we choose the up action we have 80% probability of actually go
 
 ### Here are the most important parts:
 
-#### States: A set of possible states  S 
+#### States: 
+A set of possible states  S 
 
-#### Model:  T(s,a,s′)∴P(s′|s,a)  Probability to go to state  s′  when you do the action  a  while you were on state  s , is also called transition model.
+#### Model:  T(s,a,s′)∴P(s′|s,a)  
+Probability to go to state  s′  when you do the action a while you were on state s, is also called transition model.
 
-#### Action:  A(s) , things that you can do on a particular state  s 
+#### Action:  A(s) 
+Things that you can do on a particular state s .
 
-#### Reward:  R(s) , scalar value that you get for been on a state.
+#### Reward:  R(s) 
+Scalar value that you get for been on a state.
 
-#### Policy:  Π(s)→a , our goal, is a map that tells the optimal action for every state
+#### Policy:  Π(s)→a our goal
+Is a map that tells the optimal action for every state.
 
-#### Optimal policy:  Π∗(s)→a , is a policy that maximize your expected reward  R(s) 
+#### Optimal policy:  Π∗(s)→a 
+Is a policy that maximize your expected reward  R(s).
 
 In reinforcement learning we're going to learn a optimal policy by trial and error.
 
@@ -99,14 +105,13 @@ Also you may find a term called memoization which is something that computer peo
 
 ### Linguistic Variables:
 
-Traffic(t) = {LigthTraffic, MediumTraffic, HeavyTraffic}
+#### Traffic(t) = {LigthTraffic, MediumTraffic, HeavyTraffic}
 
-LigthTracffic = {0:160}
+#### LigthTracffic = {0:160}
 
-MediumTraffic = {161:480}
+#### MediumTraffic = {161:480}
 
-HeavyTraffic = {481: 800}
-
+#### HeavyTraffic = {481: 800}
 
 ## MemberShip Function 
 
